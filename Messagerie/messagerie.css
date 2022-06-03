@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Press+Start+2P&display=swap'); 
+* {
+    font-family: "Lato",sans-serif;
+    caret-color:  #A74FBA;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    color : var(--black);
+    background-color: var(--dark-white);
+    margin: 0px
+  }
+#header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-white);
+    padding: 10px 0;
+    position:fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+   
+}
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px 150px;
+  justify-content: space-between;
+
+}
+  
+  
+  
+  
+  
+  /* texte en attendant logo ou autre nom */
+  #logo p {
+    min-height: 20px;
+    max-height: 40px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.5em
+  
+  }
+  
+  
+  
+  
+  /* barre de recherche */
+  #search {
+    background-color: var(--dark-white);
+    min-height: 40px;
+    max-height: 40px;
+    border: 1px solid var(--border-white);
+    border-radius: 10px;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px
+  
+  }
+  #search .recherche {
+    background-color: var(--dark-white);
+    border-radius: 10px;
+    min-height: 20px;
+    max-height: 40px;
+    width: 298px;
+    border: none;
+  }
+  #search .recherche[type="text"]:focus {
+    outline: none;
+  }
+
+  
+  
+  
+  
+  /* BOUTONS */
+  /* style des boutons */
+  .bouton {
+      background-color: rgb(255, 255, 255);
+      padding: 0px;
+      margin: 0px;
+      height: 40px;
+      width: 40px;
+      border-radius: 200px;
+      border: 1px solid var(--border-white);
+      position: relative;
+  
+    }
+  /* centrer svg/img dans le bouton */
+  .bouton img{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  /* hover des boutons */
+  .bouton:hover{
+      background-color: #CE9DD9;
+      cursor: pointer;
+  }
+
+
+  .formulaire {
+    display: inline;
+  }
+
+.form{
+  margin:50px 150px 0 150px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.right_message{
+  margin-left:150px;
+  margin-right:150px;
+}
+
+.design_message{
+  display: flex;
+  flex-direction: column;
+}
+
+.design_message div{
+  padding:20px;
+  border-radius: 50px;
+  border:solid 2px #dddddd;
+  background: white;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.design_message div:last-child{
+  margin-bottom: 0px;
+}
+
+.message_right{
+  align-self: flex-end;
+  white-space: break-spaces;
+}
+
+.message_left{
+  align-self: flex-start;
+  white-space: break-spaces;
+}
+
+/* fin header ------------------------------------------------------------------------------ */
+
+
+      

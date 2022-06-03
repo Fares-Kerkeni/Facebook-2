@@ -1,0 +1,36 @@
+  /* BOUTONS */
+  /* style des boutons */
+  .bouton {
+    background-color: var(--dark-white);
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 200px;
+    border: 1px solid #dddddd;
+    position: relative;
+
+  }
+/* centrer svg/img dans le bouton */
+.bouton img{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* hover des boutons */
+.bouton:hover{
+    background-color: #CE9DD9;
+    cursor: pointer;
+}
+
+.formulaire {
+  display: inline;
+}
+
+.theme_change{
+  cursor: pointer;
+}

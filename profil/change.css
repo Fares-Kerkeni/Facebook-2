@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Press+Start+2P&display=swap'); 
+* {
+    font-family: "Lato",sans-serif;
+  }
+
+
+p {
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    font-size: 1em;
+}
+
+
+
+
+#back_button button {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 200px;
+    border: 1px solid #dddddd;
+    position: relative;
+
+  }
+/* centrer svg/img dans le bouton */
+#back_button button img{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* hover des boutons */
+#back_button button:hover{
+    background-color: #CE9DD9;
+    cursor: pointer;
+}
+
+
+
+
+/* titres */
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0
+}
+/* espacement avec input partie infos */
+
+input {
+    margin : 10px 10px 10px 0
+}
+
+
+/* délimitation */
+
+#mes_infos {
+    border-bottom: 1px solid black;
+    padding: 20px
+
+}
+
+/* partie images */
+
+#zone_images {
+    display: flex;
+    flex:wrap;
+}
+
+#profil_image {
+    width: 50%;
+    /* margin-right: 10px; */
+    padding: 20px
+
+    /* border: 2px solid red */
+
+}
+#banner_image {
+    width: 50%;
+    /* margin-left: 10px; */
+    padding: 20px
+
+    /* border: 2px solid blue */
+
+}
+
+
+
+.img_profil img, .img_banner img {
+    /* z-index: 0; */
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+.img_profil, .img_banner {
+    /* z-index: 1; */
+    margin: 10px 0;
+    height:500px;
+    border-radius: 10px;
+}
